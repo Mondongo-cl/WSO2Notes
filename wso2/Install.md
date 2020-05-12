@@ -25,5 +25,7 @@ Version 3.0.0 not works with chrome in my tests, I use brave to see the informat
 
 
 ```keytool -export -alias wso2carbon  -file wso2carbon_back.cer -keystore \wso2am-3.0.0\repository\resources\security\wso2carbon.jks -storepass wso2carbon```
+
 ```keytool -delete -alias wso2carbon  -keystore \wso2am-3.0.0\repository\resources\security\client-truststore.jks -storepass wso2carbon```
+
 ```keytool -import -alias wso2carbon  -file wso2carbon_back.cer -keystore \wso2am-3.0.0\repository\resources\security\client-truststore.jks -sotepass wso2carbon```
