@@ -98,4 +98,41 @@ Copy the following client libraries from the ACTIVEMQ_HOME/lib directory to the 
 
 https://ei.docs.wso2.com/en/latest/micro-integrator/setup/brokers/configure-with-ActiveMQ/
 
+Open the deployment.toml file from the 
+- MI_TOOLING_HOME/Contents/Eclipse/runtime/microesb/conf/ (in MacOS) or 
+- MI_TOOLING_HOME/runtime/microesb/conf/ (in Windows/Linux) 
+directory and add the configurations given below. This is required for enabling the broker to store messages.
 
+```
+[[transport.jms.listener]]
+name = "myTopicListener"
+parameter.initial_naming_factory = "org.apache.activemq.jndi.ActiveMQInitialContextFactory"
+parameter.provider_url = "tcp://localhost:61616"
+parameter.connection_factory_name = "TopicConnectionFactory"
+parameter.connection_factory_type = "topic"
+parameter.cache_level = "consumer"
+
+[[transport.jms.listener]]
+name = "myQueueListener"
+parameter.initial_naming_factory = "org.apache.activemq.jndi.ActiveMQInitialContextFactory"
+parameter.provider_url = "tcp://localhost:61616"
+parameter.connection_factory_name = "QueueConnectionFactory"
+parameter.connection_factory_type = "queue"
+parameter.cache_level = "consumer"
+
+[[transport.jms.sender]]
+name = "myTopicSender"
+parameter.initial_naming_factory = "org.apache.activemq.jndi.ActiveMQInitialContextFactory"
+parameter.provider_url = "tcp://localhost:61616"
+parameter.connection_factory_name = "TopicConnectionFactory"
+parameter.connection_factory_type = "topic"
+parameter.cache_level = "producer"
+
+[[transport.jms.sender]]
+name = "myQueueSender"
+parameter.initial_naming_factory = "org.apache.activemq.jndi.ActiveMQInitialContextFactory"
+parameter.provider_url = "tcp://localhost:61616"
+parameter.connection_factory_name = "QueueConnectionFactory"
+parameter.connection_factory_type = "queue"
+parameter.cache_level = "producer"
+```
