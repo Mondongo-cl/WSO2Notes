@@ -100,7 +100,9 @@ https://ei.docs.wso2.com/en/latest/micro-integrator/setup/brokers/configure-with
 
 Open the deployment.toml file from the 
 - MI_TOOLING_HOME/Contents/Eclipse/runtime/microesb/conf/ (in MacOS) or 
-- MI_TOOLING_HOME/runtime/microesb/conf/ (in Windows/Linux) 
+- MI_TOOLING_HOME/runtime/microesb/conf/ (in Windows/Linux)
+
+
 directory and add the configurations given below. This is required for enabling the broker to store messages.
 
 ```
