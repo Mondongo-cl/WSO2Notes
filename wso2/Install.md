@@ -39,3 +39,38 @@ Version 3.0.0 not works with chrome in my tests, I use brave to see the informat
 #### import
 
 ```keytool -import -trustcacerts -alias wso2carbon_new -file wso2carbon_bak.cer -keystore ballerinaKeystore.p12 -storepass ballerina```
+
+### Installation Issues Micro Integration Studio
+
+if you are experimenting dificulties to see the artifacts configuration forms, you need add a manifest file to change the IDE display mode.
+
+
+```
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3">
+    <description>eclipse</description>
+    <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+        <security>
+            <requestedPrivileges>
+                <requestedExecutionLevel xmlns:ms_asmv3="urn:schemas-microsoft-com:asm.v3"
+                               level="asInvoker"
+                               ms_asmv3:uiAccess="false">
+                </requestedExecutionLevel>
+            </requestedPrivileges>
+        </security>
+    </trustInfo>
+    <asmv3:application>
+        <asmv3:windowsSettings xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">
+            <ms_windowsSettings:dpiAware xmlns:ms_windowsSettings="http://schemas.microsoft.com/SMI/2005/WindowsSettings">false</ms_windowsSettings:dpiAware>
+        </asmv3:windowsSettings>
+    </asmv3:application>
+</assembly>
+
+```
+
+this file has to be named as the eclipse executable file, this solution only was tested on windows 10 hi resolutions screens.
+
+by example the name to IntegrationStudio must be ```IntegrationStudio.exe.manifest```
+
+
+
