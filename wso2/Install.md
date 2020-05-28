@@ -72,5 +72,30 @@ this file has to be named as the eclipse executable file, this solution only was
 
 by example the name to IntegrationStudio must be ```IntegrationStudio.exe.manifest```
 
+### Setting up the Micro Integrator with ActiveMQ¶
+Follow the instructions below to set up and configure.
+
+Download Apache ActiveMQ.
+Download and install WSO2 Micro Integrator.
+Copy the following client libraries from the ACTIVEMQ_HOME/lib directory to the MI_HOME/lib directory.
+
+#### ActiveMQ 5.8.0 and above
+
+-activemq-broker-5.8.0.jar
+-activemq-client-5.8.0.jar
+-activemq-kahadb-store-5.8.0.jar
+-geronimo-jms_1.1_spec-1.1.1.jar
+-geronimo-j2ee-management_1.1_spec-1.0.1.jar
+-geronimo-jta_1.0.1B_spec-1.0.1.jar
+-hawtbuf-1.9.jar
+-Slf4j-api-1.6.6.jar
+-activeio-core-3.1.4.jar (available in the ACTIVEMQ_HOME/lib/optional directory)
+#### Earlier version of ActiveMQ
+
+-activemq-core-5.5.1.jar
+-geronimo-j2ee-management_1.0_spec-1.0.jar
+-geronimo-jms_1.1_spec-1.1.1.jar
+
+https://ei.docs.wso2.com/en/latest/micro-integrator/setup/brokers/configure-with-ActiveMQ/
 
 
