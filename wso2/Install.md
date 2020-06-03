@@ -44,6 +44,15 @@ Version 3.0.0 not works with chrome in my tests, I use brave to see the informat
 
 if you are experimenting dificulties to see the artifacts configuration forms.
 
+### Mathod 1
+
+Modify the ini (IntegrationStudio.ini) file and change the parameter -Dswt.autoScale=100 to -Dswt.autoScale=200, if this doesn't work use method 2.
+
+note: to avoid performance problems change the memory setting increasing the vm memory size.
+
+### Method 2
+
+
 #### Step 1: add a manifest file to change the IDE display mode.
 
 
