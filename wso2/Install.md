@@ -42,7 +42,9 @@ Version 3.0.0 not works with chrome in my tests, I use brave to see the informat
 
 ### Installation Issues Micro Integration Studio
 
-if you are experimenting dificulties to see the artifacts configuration forms, you need add a manifest file to change the IDE display mode.
+if you are experimenting dificulties to see the artifacts configuration forms.
+
+#### Step 1: add a manifest file to change the IDE display mode.
 
 
 ```
@@ -67,6 +69,20 @@ if you are experimenting dificulties to see the artifacts configuration forms, y
 </assembly>
 
 ```
+
+#### Step 2: Add into window registry a new dword value
+
+```
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\SideBySide]
+"PreferExternalManifest"=dword:00000001
+
+```
+
+
+
+
 
 this file has to be named as the eclipse executable file, this solution only was tested on windows 10 hi resolutions screens.
 
