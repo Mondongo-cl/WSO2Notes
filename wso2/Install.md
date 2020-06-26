@@ -44,7 +44,7 @@ Version 3.0.0 not works with chrome in my tests, I use brave to see the informat
 
 if you are experimenting dificulties to see the artifacts configuration forms.
 
-### Mathod 1
+### Method 1
 
 Modify the ini (IntegrationStudio.ini) file and change the parameter -Dswt.autoScale=100 to -Dswt.autoScale=200, if this doesn't work use method 2.
 
