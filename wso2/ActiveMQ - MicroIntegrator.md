@@ -4,7 +4,7 @@
 
 
 
-To insert a number of messages into a queue
+#### Insert a number of messages into a queue
 
 ```
 activemq producer 
@@ -13,3 +13,6 @@ activemq producer
 --messageCount 1000```
 
 
+#### Enable ActiveMQ serializers
+
+to allow to WSO2 Message processor mediator read messages from activeMQ message store, the microintegrator runtime needs to add the ```-Dorg.apache.activemq.SERIALIZABLE_PACKAGES="*" ``` parameter to the start options of the server runtime.
