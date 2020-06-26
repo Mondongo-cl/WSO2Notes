@@ -24,11 +24,4 @@ To config the vmoption on docker needs to add to dockerfile the following lines.
 ENV JAVA_OPTIONS= -Dorg.apache.activemq.SERIALIZABLE_PACKAGES="*"
 ```
 
-##### configure $System:vars
-
-add to docker file the vars declarations
-
-```
-ENV Var=MyConfigValue
-```
 
