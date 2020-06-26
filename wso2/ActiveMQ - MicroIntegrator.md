@@ -14,3 +14,21 @@ activemq producer
 #### Enable ActiveMQ serializers
 
 to allow to WSO2 Message processor mediator read messages from activeMQ message store, the microintegrator runtime needs to add the ```-Dorg.apache.activemq.SERIALIZABLE_PACKAGES="*" ``` parameter to the start options of the server runtime.
+
+
+##### Docker & kubernetes
+
+To config the vmoption on docker needs to add to dockerfile the following lines.
+
+```
+ENV JAVA_OPTIONS= -Dorg.apache.activemq.SERIALIZABLE_PACKAGES="*"
+```
+
+##### configure $System:vars
+
+add to docker file the vars declarations
+
+```
+ENV Var=MyConfigValue
+```
+
