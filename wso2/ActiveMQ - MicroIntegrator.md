@@ -1,8 +1,8 @@
 ## Add new message into queue
 
-### Instalation notes
+### Notes
 
-folow [this](https://scioconsulting.visualstudio.com/_git/Documentacion?path=%2Fwso2%2FInstall.md&_a=preview&anchor=setting-up-the-micro-integrator-with-activemq%C2%B6) link.
+folow [this](/wso2/Install.md&_a=preview&anchor=setting-up-the-micro-integrator-with-activemq%C2%B6) link.
 
 To insert a number of messages into a queue
 
