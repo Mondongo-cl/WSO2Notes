@@ -2,7 +2,7 @@
 
 ### Notes
 
-folow [this](/wso2/Install.md&_a=preview&anchor=setting-up-the-micro-integrator-with-activemq%C2%B6) link.
+
 
 To insert a number of messages into a queue
 
